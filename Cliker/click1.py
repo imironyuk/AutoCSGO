@@ -1,3 +1,4 @@
+import sys
 import pyautogui as auto
 import keyboard as key
 
@@ -11,3 +12,7 @@ while True:
          if key.is_pressed( stop_key ):
            break
            break
+           exit(0)
+           sys.exit()
+
+
