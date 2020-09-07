@@ -14,8 +14,6 @@ import webbrowser
 from PySide.QtCore import *
 from PySide.QtGui import *
 
-import services
-
 __author__ = "James \"clug\" <clug@clug.xyz>"
 __version__ = "1.2.0"
 
@@ -39,7 +37,7 @@ class AutoAccept_GUI(QMainWindow):
         self.initUI()
         self.show()
 
-        if services.base.aero_enabled():
+        if src.services.base.aero_enabled():
             self.warn_aero()
 
     def initUI(self):
@@ -83,7 +81,7 @@ class AutoAccept_GUI(QMainWindow):
         self.setCentralWidget(self.widgets["main"])
 
     def accept_scan(self):
-        found = services.mm.get_accept()
+        found = src.services.mm.get_accept()
         if found:
             if not self.checkboxes["loop"].isChecked():
                 self.scan(False)
@@ -92,7 +90,7 @@ class AutoAccept_GUI(QMainWindow):
 
     def scan(self, on):
         if on:
-            if not services.mm.exists():
+            if not src.services.mm.exists():
                 self.critical_notrunning()
                 on = False
             else:

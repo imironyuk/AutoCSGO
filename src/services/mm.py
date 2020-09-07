@@ -6,7 +6,7 @@ Provides specific functionality for Valve's official matchmaking service.
 
 import logging
 
-import base
+from src.services import base
 
 # use this to find csgo's hwnd
 WINDOW_TITLE = base.re.compile("^Counter-Strike: Global Offensive$")
