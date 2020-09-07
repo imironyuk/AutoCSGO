@@ -8,6 +8,7 @@
           <option value="ctypes" />
           <option value="re" />
           <option value="src.Cliker.click.*" />
+          <option value="Cliker.click.*" />
         </list>
       </option>
     </inspection_tool>
