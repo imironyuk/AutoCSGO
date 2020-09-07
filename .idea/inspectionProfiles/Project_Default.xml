@@ -9,6 +9,8 @@
           <option value="re" />
           <option value="src.Cliker.click.*" />
           <option value="Cliker.click.*" />
+          <option value="keyboard" />
+          <option value="pyautogui" />
         </list>
       </option>
     </inspection_tool>
