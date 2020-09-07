@@ -1,8 +1,4 @@
-"""
-csgo-autoaccept
 
-Provides base functionality for all matchmaking services.
-"""
 
 import ctypes
 import re
@@ -11,13 +7,13 @@ import win32api
 import win32gui
 from PIL import ImageGrab
 
-def aero_enabled():
-    """
-    Check if Windows Aero is enabled.
 
-    Returns:
-        bool: Whether or not Windows Aero is enabled.
-    """
+class AttributeError():
+    pass
+
+
+def aero_enabled():
+    
 
     try:
         hasAero = ctypes.c_bool()

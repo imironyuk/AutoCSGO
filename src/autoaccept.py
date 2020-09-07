@@ -1,8 +1,3 @@
-"""
-csgo-autoaccept
-
-Automatically detects and clicks the accept button in CS:GO matchmaking lobbies.
-"""
 
 from __future__ import division
 
